@@ -1,0 +1,16 @@
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[user]
+	name = Weixiang Yu
+	email = wy73@drexel.edu
+[credential]
+	helper = store
+	helper = cache --timeout=3600
+[push]
+	default = upstream
+[color]
+	ui = auto
+[merge]
+	conflictstyle = diff3
