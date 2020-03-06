@@ -14,8 +14,7 @@ ln -sf "${CWD}/${GIT_PROMPT}" "${HOME}/git-prompt.sh"
 
 # jupyter notebook user settings
 rm -r "${HOME}/.jupyter/lab/user-settings/@jupyterlab/"; mkdir -p "${HOME}/.jupyter/lab/user-settings/@jupyterlab/" 
-
-cp -Rf "${CWD}/user-settings/" "${HOME}/.jupyter/lab/user-settings/@jupyterlab/" 
+cp -rf "${CWD}/user-settings/." "${HOME}/.jupyter/lab/user-settings/@jupyterlab" 
 
 echo 'source ~/git-completion.bash' >> "${HOME}/.bashrc"
 
@@ -27,3 +26,5 @@ echo 'reset="\[\033[0m\]"' >> "${HOME}/.bashrc"
 echo 'source ~/git-prompt.sh' >> "${HOME}/.bashrc"
 echo 'export GIT_PS1_SHOWDIRTYSTATE=1' >> "${HOME}/.bashrc"
 echo 'export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"' >> "${HOME}/.bashrc"
+
+source "${HOME}/.bashrc"
