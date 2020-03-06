@@ -1,0 +1,29 @@
+{
+    "shortcuts":[
+        {
+            "command": "application:close",
+            "keys": [
+                "Shift Ctrl W"
+            ],
+            "selector": ".jp-Activity"
+        },
+        {
+            "command": "notebook:create-console",
+            "selector": ".jp-Notebook:focus",
+            "keys": ["Shift Ctrl ."]
+        },
+        {
+            "command": "notebook:enable-output-scrolling",
+            "keys": ["Shift Ctrl S" ],
+            "selector": ".jp-Notebook:focus",
+        },
+        {
+            "command": "notebook:disable-output-scrolling",
+            "keys": ["Shift Alt S" ],
+            "selector": ".jp-Notebook:focus",
+        }
+        
+    ]
+    
+    
+}

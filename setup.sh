@@ -6,10 +6,14 @@ GIT_CREDENTIALS="git-credentials"
 GIT_COMPLETION="git-completion.bash"
 GIT_PROMPT="git-prompt.sh"
 
-ln -s "${CWD}/${GITCONFIG}" "${HOME}/.gitconfig"
-ln -s "${CWD}/${GIT_CREDENTIALS}" "${HOME}/.git-credentials"
-ln -s "${CWD}/${GIT_COMPLETION}" "${HOME}/git-completion.bash"
-ln -s "${CWD}/${GIT_PROMPT}" "${HOME}/git-prompt.sh"
+# git bash configuration
+ln -sf "${CWD}/${GITCONFIG}" "${HOME}/.gitconfig"
+ln -sf "${CWD}/${GIT_CREDENTIALS}" "${HOME}/.git-credentials"
+ln -sf "${CWD}/${GIT_COMPLETION}" "${HOME}/git-completion.bash"
+ln -sf "${CWD}/${GIT_PROMPT}" "${HOME}/git-prompt.sh"
+
+# jupyter notebook user settings
+cp -Rf "${CWD}/user-settings/" "${HOME}/.jupyter/lab/user-settings/@jupyterlab/" 
 
 echo 'source ~/git-completion.bash' >> "${HOME}/.bashrc"
 
