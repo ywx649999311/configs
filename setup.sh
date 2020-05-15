@@ -13,7 +13,12 @@ ln -sf "${CWD}/${GIT_COMPLETION}" "${HOME}/git-completion.bash"
 ln -sf "${CWD}/${GIT_PROMPT}" "${HOME}/git-prompt.sh"
 
 # jupyter notebook user settings
-rm -r "${HOME}/.jupyter/lab/user-settings/@jupyterlab/"; mkdir -p "${HOME}/.jupyter/lab/user-settings/@jupyterlab/" 
+JLab="${HOME}/.jupyter/lab/user-settings/@jupyterlab/"
+if [ -d "$JLab" ]; then
+    rm -r "$JLab"; 
+fi
+
+mkdir -p "${HOME}/.jupyter/lab/user-settings/@jupyterlab/" 
 cp -rf "${CWD}/user-settings/." "${HOME}/.jupyter/lab/user-settings/@jupyterlab" 
 
 echo 'source ~/git-completion.bash' >> "${HOME}/.bashrc"
