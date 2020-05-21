@@ -2,13 +2,11 @@
 
 CWD=${PWD}
 GITCONFIG="gitconfig_local"
-# GIT_CREDENTIALS="git-credentials"
 GIT_COMPLETION="git-completion.bash"
 GIT_PROMPT="git-prompt.sh"
 
 # git bash configuration
 ln -sf "${CWD}/${GITCONFIG}" "${HOME}/.gitconfig"
-# ln -sf "${CWD}/${GIT_CREDENTIALS}" "${HOME}/.git-credentials"
 ln -sf "${CWD}/${GIT_COMPLETION}" "${HOME}/git-completion.bash"
 ln -sf "${CWD}/${GIT_PROMPT}" "${HOME}/git-prompt.sh"
 
