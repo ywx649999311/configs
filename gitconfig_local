@@ -32,3 +32,36 @@
     added = yellow
     changed = green
     untracked = red
+
+[alias]
+    b = branch
+    ############
+    c = commit
+    ca = commit -a
+    cm = commit -m
+    cam = commit -am
+    cd = commit --amend
+    ############
+    cl = clone
+    ############
+    d = diff
+    ############
+    f = fetch
+    ############
+    l = log
+    ############
+    m = merge
+    ############
+    o = checkout
+    om = checkout master
+    ob = checkout -b
+    ############
+    ps = push
+    ############
+    pl = pull
+    ############
+    re = reset
+    rh = reset HEAD
+    reh = reset --hard
+    ############
+    s = status
