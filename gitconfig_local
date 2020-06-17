@@ -14,6 +14,9 @@
 [merge]
 	conflictstyle = diff3
 
+[core]
+    editor = code --wait
+
 [color]
     ui = true
 
