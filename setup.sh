@@ -19,15 +19,24 @@ fi
 mkdir -p "${HOME}/.jupyter/lab/user-settings/@jupyterlab/" 
 cp -rf "${CWD}/user-settings/." "${HOME}/.jupyter/lab/user-settings/@jupyterlab" 
 
-echo 'source ~/git-completion.bash' >> "${HOME}/.bashrc"
+__prompt='
 
-echo 'green="\[\033[0;32m\]"' >> "${HOME}/.bashrc"
-echo 'blue="\[\033[0;34m\]"' >> "${HOME}/.bashrc"
-echo 'purple="\[\033[0;35m\]"' >> "${HOME}/.bashrc"
-echo 'reset="\[\033[0m\]"' >> "${HOME}/.bashrc"
+# Enable tab completion
+source ~/git-completion.bash
 
-echo 'source ~/git-prompt.sh' >> "${HOME}/.bashrc"
-echo 'export GIT_PS1_SHOWDIRTYSTATE=1' >> "${HOME}/.bashrc"
-echo 'export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"' >> "${HOME}/.bashrc"
+# colors!
+green="\[\033[0;32m\]"
+blue="\[\033[0;34m\]"
+purple="\[\033[0;35m\]"
+white="\[\033[0;37m\]"
+reset="\[\033[0m\]"
+
+# Change command prompt
+source ~/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1="$purple\u$green\$(__git_ps1)$blue \W $white$ $reset" 
+'
+
+echo "$__prompt">> "${HOME}/.bashrc"
 
 source "${HOME}/.bashrc"
