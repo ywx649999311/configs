@@ -16,8 +16,8 @@ if [ -d "$JLab" ]; then
     rm -r "$JLab"; 
 fi
 
-mkdir -p "${HOME}/.jupyter/lab/user-settings/@jupyterlab/" 
-cp -rf "${CWD}/user-settings/." "${HOME}/.jupyter/lab/user-settings/@jupyterlab" 
+# mkdir -p "${HOME}/.jupyter/lab/user-settings/@jupyterlab/" 
+ln -sf "${CWD}/user-settings/" "${HOME}/.jupyter/lab/user-settings/" 
 
 __prompt='
 
