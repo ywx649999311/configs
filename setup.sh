@@ -19,9 +19,10 @@ elif [ -d "$JLab" ]; then
 fi
 
 # create link to config
-Lab_config = "${HOME}/.jupyter/lab"
-if [ ! -e "$Lab_config" ]; then
-    mkdir -p $Lab_config
+LabConfig="${HOME}/.jupyter/lab"
+if [ ! -e "$LabConfig" ]; then
+    mkdir -p $LabConfig;
+fi
 ln -sf "${CWD}/user-settings/" "${HOME}/.jupyter/lab/" 
 
 __prompt='
