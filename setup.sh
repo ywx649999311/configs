@@ -35,10 +35,10 @@ __prompt='
 source ~/git-completion.bash
 
 # colors!
-green="\[\033[0;32m\]"
-blue="\[\033[0;34m\]"
-purple="\[\033[0;35m\]"
-white="\[\033[0;37m\]"
+green="\[\033[01;32m\]"
+blue="\[\033[01;34m\]"
+purple="\[\033[01;35m\]"
+white="\[\033[01;37m\]"
 reset="\[\033[0m\]"
 
 # Change command prompt
