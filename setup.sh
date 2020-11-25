@@ -10,13 +10,15 @@ ln -sf "${CWD}/${GITCONFIG}" "${HOME}/.gitconfig"
 ln -sf "${CWD}/${GIT_COMPLETION}" "${HOME}/git-completion.bash"
 ln -sf "${CWD}/${GIT_PROMPT}" "${HOME}/git-prompt.sh"
 
-# jupyter notebook user settings
-JLab="${HOME}/.jupyter/lab/user-settings/"
-if [ -d "$JLab" ]; then
-    rm -r "$JLab"; 
+# jupyter notebook user settings, remove link/dir
+JLab="${HOME}/.jupyter/lab/user-settings"
+if [ -e "$JLab" -a -L "$JLab" ]; then
+    rm "$JLab"; 
+elif [ -d "$JLab" ]; then
+    rm -r "$JLab";
 fi
 
-# mkdir -p "${HOME}/.jupyter/lab/user-settings/"
+# create link to config
 ln -sf "${CWD}/user-settings/" "${HOME}/.jupyter/lab/" 
 
 __prompt='

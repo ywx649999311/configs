@@ -4,8 +4,16 @@
     // Text editor settings for all CodeMirror editors.
     // ************************************************
 
+    // Key Map
+    // Configures the keymap to use
+    "keyMap": "sublime",
+
     // Theme
     // CSS file defining the corresponding
     // .cm-s-[name] styles is loaded
-    "theme": "jupyter"
+    "theme": "jupyter", 
+    
+    // Style Active Line
+    // Value is boolean, or { nonEmpty: boolean }
+    "styleActiveLine": true
 }

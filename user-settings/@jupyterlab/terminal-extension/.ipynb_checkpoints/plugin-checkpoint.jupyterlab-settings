@@ -16,6 +16,10 @@
     // The line height used to render text.
     "lineHeight": 1.1,
 
+    // Treat option as meta key on macOS
+    // Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word
+    "macOptionIsMeta": true,
+
     // Paste with Ctrl+V
     // Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available
     "pasteWithCtrlV": true,
