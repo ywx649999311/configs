@@ -1,0 +1,11 @@
+{
+    "Extension": {
+        "Ignore": {
+            "/cells/*/outputs": true,
+            "/cells/*/execution_count": true,
+            "/cells/*/attachments": false,
+            "/cells/*/metadata": true,
+            "/metadata/kernelspec": true
+        }
+    }
+}

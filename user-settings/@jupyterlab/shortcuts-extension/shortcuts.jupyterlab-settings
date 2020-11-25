@@ -1,0 +1,137 @@
+{
+    "shortcuts":[
+//      Completely disabled default shortcut
+        {
+            "command": "application:activate-next-tab-bar",
+            "keys": ["Ctrl Shift ."],
+            "selector": "body",
+            "disabled":true
+        },
+                {
+            "command": "application:activate-previous-tab-bar",
+            "keys": ["Ctrl Shift ,"],
+            "selector": "body",
+            "disabled":true
+        },
+//      Overrides default with new keybindings
+        {
+            "command": "application:activate-next-tab",
+            "keys": ["Shift Alt ]"],
+            "selector": "body"
+        },
+        {
+            "command": "application:activate-next-tab",
+            "keys": ["Shift Ctrl ]"],
+            "selector": "body",
+            "disabled":true
+        },
+        {
+            "command": "application:activate-previous-tab",
+            "keys": ["Shift Alt ["],
+            "selector": "body"
+        },
+        {
+            "command": "application:activate-previous-tab",
+            "keys": ["Shift Ctrl ["],
+            "selector": "body",
+            "disabled":true
+        },
+        {
+            "command": "notebook:enter-command-mode",
+            "keys": ["Alt M"],
+            "selector": ".jp-Notebook.jp-mod-editMode"
+        },
+        {
+            "command": "notebook:enter-command-mode",
+            "keys": ["Ctrl M"],
+            "selector": ".jp-Notebook.jp-mod-editMode",
+            "disabled":true
+        },
+        {
+            "command": "tabsmenu:activate-previously-used-tab",
+            "keys": ["Shift Alt '"],
+            "selector": "body"
+        },
+        {
+            "command": "tabsmenu:activate-previously-used-tab",
+            "keys": ["Accel Shift '"],
+            "selector": "body",
+            "disabled":true
+        },
+//      New keybinding, some may co-exists with the defaults
+        {
+            "command": "notebook:merge-cells",
+            "keys": ["Shift Alt M"],
+            "selector": ".jp-Notebook:focus"
+        },
+//         {
+//             "command": "notebook:merge-cells",
+//             "keys": ["Shift M"],
+//             "selector": ".jp-Notebook:focus",
+//             "disabled":true
+//         },
+        {
+            "command": "notebook:split-cell-at-cursor",
+            "keys": ["Shift Alt -"],
+            "selector": ".jp-Notebook.jp-mod-editMode"
+        },
+//         {
+//             "command": "notebook:split-cell-at-cursor",
+//             "keys": ["Ctrl Shift -"],
+//             "selector": ".jp-Notebook.jp-mod-editMode",
+//             "disabled":true
+//         },
+        {
+            "command": "filebrowser:rename",
+            "keys": ["Shift Alt Enter"],
+            "selector": ".jp-FileBrowser"
+        },
+        {
+            "command": "filebrowser:delete",
+            "keys": ["Shift Alt D"],
+            "selector": ".jp-FileBrowser"
+        },
+        {
+            "command": "notebook:run-in-console",
+            "keys": ["Shift Alt R"],
+            "selector": ".jp-Notebook.jp-mod-editMode"
+        },
+        {
+            "command": "notebook:create-console",
+            "selector": ".jp-Notebook:focus",
+            "keys": ["Shift Alt ."]
+        },
+        {
+            "command": "editmenu:clear-current",
+            "keys": ["Shift Alt C"],
+            "selector": ".jp-Notebook:focus"
+        },
+        {
+            "command": "notebook:clear-cell-output",
+            "keys": ["Shift Alt C"],
+            "selector": "[data-jp-undoer]"
+        },
+        {
+            "command": "notebook:move-cell-up",
+            "selector": ".jp-Notebook:focus",
+            "keys": ["Shift Alt ArrowUp"]
+        },
+        {
+            "command": "notebook:move-cell-down",
+            "selector": ".jp-Notebook:focus",
+            "keys": ["Shift Alt ArrowDown"]
+        },
+        {
+            "command": "notebook:enable-output-scrolling",
+            "keys": ["Shift Ctrl S" ],
+            "selector": ".jp-Notebook:focus",
+        },
+        {
+            "command": "notebook:disable-output-scrolling",
+            "keys": ["Shift Alt S" ],
+            "selector": ".jp-Notebook:focus",
+        },
+    ]
+    
+    
+}
