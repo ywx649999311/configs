@@ -18,12 +18,16 @@ elif [ -d "$JLab" ]; then
     rm -r "$JLab";
 fi
 
-# create link to config
+# create link to jlab config
 LabConfig="${HOME}/.jupyter/lab"
 if [ ! -e "$LabConfig" ]; then
     mkdir -p $LabConfig;
 fi
 ln -sf "${CWD}/user-settings/" "${HOME}/.jupyter/lab/" 
+ln -sf "${CWD}/nbdime_config.json" "${HOME}/.jupyter/nbdime_config.json" 
+
+# other linked files
+ln -sf "${CWD}/snippets" "${HOME}/"
 
 __prompt='
 
