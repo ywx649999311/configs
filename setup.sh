@@ -19,6 +19,9 @@ elif [ -d "$JLab" ]; then
 fi
 
 # create link to config
+Lab_config = "${HOME}/.jupyter/lab"
+if [ ! -e "$Lab_config" ]; then
+    mkdir -p $Lab_config
 ln -sf "${CWD}/user-settings/" "${HOME}/.jupyter/lab/" 
 
 __prompt='
@@ -40,5 +43,7 @@ export PS1="$purple\u$green\$(__git_ps1)$blue \W $white$ $reset"
 '
 
 echo "$__prompt">> "${HOME}/.bashrc"
-
 source "${HOME}/.bashrc"
+
+# make sure arrow keys work in vi/vim insert mode
+echo "set nocompatible" >> ~/.vimrc
