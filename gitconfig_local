@@ -4,7 +4,7 @@
 	required = true
 [user]
 	name = Weixiang Yu
-	email = wy73@drexel.edu
+	email = 11515291+ywx649999311@users.noreply.github.com
 [credential]
 	helper = osxkeychain
 	helper = cache --timeout=3600
