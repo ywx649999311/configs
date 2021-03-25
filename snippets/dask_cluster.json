@@ -1,0 +1,1 @@
+{"name":"dask_cluster","description":"Setup a Dask cluster","language":"Python","code":["from dask.distributed import Client","client = Client(n_workers=4)","client_ip = client.scheduler_info()['address'].split('//')[1]"],"id":2,"tags":[]}
