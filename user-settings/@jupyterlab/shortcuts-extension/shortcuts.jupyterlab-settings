@@ -58,29 +58,59 @@
             "selector": "body",
             "disabled":true
         },
+        {
+            "command": "notebook:toggle-all-cell-line-numbers",
+            "keys": ["Shift Alt L"],
+            "selector": ".jp-Notebook:focus"
+        },
 //      New keybinding, some may co-exists with the defaults
+        {
+            "command": "notebook:hide-cell-code",
+            "keys": ["Shift Alt C"],
+            "selector": ".jp-Notebook:focus.jp-mod-commandMode"
+        },
+        {
+            "command": "notebook:hide-cell-outputs",
+            "keys": ["Shift Alt C", "Shift Alt C"],
+            "selector": ".jp-Notebook:focus.jp-mod-commandMode"
+        },
+        {
+            "command": "notebook:show-cell-code",
+            "keys": ["Shift Ctrl C"],
+            "selector": ".jp-Notebook:focus.jp-mod-commandMode"
+        },
+        {
+            "command": "notebook:show-cell-outputs",
+            "keys": ["Shift Ctrl C", "Shift Ctrl C"],
+            "selector": ".jp-Notebook:focus.jp-mod-commandMode"
+        },
+        {
+            "command": "notebook:trust",
+            "keys": ["Shift Alt T"],
+            "selector": ".jp-Notebook:focus"
+        },
         {
             "command": "notebook:merge-cells",
             "keys": ["Shift Alt M"],
             "selector": ".jp-Notebook:focus"
         },
-//         {
-//             "command": "notebook:merge-cells",
-//             "keys": ["Shift M"],
-//             "selector": ".jp-Notebook:focus",
-//             "disabled":true
-//         },
+        {
+            "command": "notebook:merge-cells",
+            "keys": ["Shift M"],
+            "selector": ".jp-Notebook:focus",
+            "disabled":true
+        },
         {
             "command": "notebook:split-cell-at-cursor",
             "keys": ["Shift Alt -"],
             "selector": ".jp-Notebook.jp-mod-editMode"
         },
-//         {
-//             "command": "notebook:split-cell-at-cursor",
-//             "keys": ["Ctrl Shift -"],
-//             "selector": ".jp-Notebook.jp-mod-editMode",
-//             "disabled":true
-//         },
+        {
+            "command": "notebook:split-cell-at-cursor",
+            "keys": ["Ctrl Shift -"],
+            "selector": ".jp-Notebook.jp-mod-editMode",
+            "disabled":true
+        },
         {
             "command": "filebrowser:rename",
             "keys": ["Shift Alt Enter"],
@@ -101,16 +131,17 @@
             "selector": ".jp-Notebook:focus",
             "keys": ["Shift Alt ."]
         },
-        {
-            "command": "editmenu:clear-current",
-            "keys": ["Shift Alt C"],
-            "selector": ".jp-Notebook:focus"
-        },
-        {
-            "command": "notebook:clear-cell-output",
-            "keys": ["Shift Alt C"],
-            "selector": "[data-jp-undoer]"
-        },
+//         {
+//             "command": "editmenu:clear-current",
+//             "keys": ["Shift Alt C"],
+//             "selector": ".jp-Notebook:focus",
+//             "disabled":true
+//         },
+//         {
+//             "command": "notebook:clear-cell-output",
+//             "keys": ["Shift Alt C"],
+//             "selector": "[data-jp-undoer]"
+//         },
         {
             "command": "notebook:move-cell-up",
             "selector": ".jp-Notebook:focus",

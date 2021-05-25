@@ -6,5 +6,5 @@
 
     // Navigate to current directory
     // Whether to automatically navigate to a document's current directory
-    "navigateToCurrentDirectory": false
+    "navigateToCurrentDirectory": true
 }
