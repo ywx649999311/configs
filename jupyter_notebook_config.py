@@ -273,7 +273,7 @@ c.NotebookApp.open_browser = False
 #    from notebook.auth import passwd; passwd()
 #
 #  The string should be of the form type:salt:hashed-password.
-c.NotebookApp.password = "sha1:23260871f9c3:ec7a91e9ec7a535bfb0e7a5cf5f10dfbf2222fb4"
+# c.NotebookApp.password = ''
 
 ## Forces users to use a password for the Notebook server. This is useful in a
 #  multi user environment, for instance when everybody in the LAN can access each
@@ -763,3 +763,10 @@ c.NotebookApp.token = ""
 #
 #  By default, all installed kernels are allowed.
 # c.KernelSpecManager.whitelist = set()
+
+# -----------------------------------------------------------------------------
+# Jupyter Lab System Usage Monitor
+# -----------------------------------------------------------------------------
+# cpu
+c = get_config()
+c.ResourceUseDisplay.track_cpu_percent = True

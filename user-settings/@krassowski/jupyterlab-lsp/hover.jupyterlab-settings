@@ -1,0 +1,6 @@
+{
+    "modifierKey": "Control",
+    "throttlerDelay": 50,
+    "cacheSize": 25,
+    "disable": true
+}

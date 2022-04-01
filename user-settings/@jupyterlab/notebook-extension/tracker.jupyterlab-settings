@@ -1,59 +1,44 @@
 {
-    // Notebook
-    // @jupyterlab/notebook-extension:tracker
-    // Notebook settings.
-    // **************************************
-
-    // Code Cell Configuration
-    // The configuration for all code cells.
     "codeCellConfig": {
         "autoClosingBrackets": true,
+        "cursorBlinkRate": 530,
         "fontFamily": null,
         "fontSize": 14,
-        "lineHeight": null,
         "lineNumbers": false,
-        "lineWrap": "off",
+        "lineWrap": "wordWrapColumn",
         "matchBrackets": true,
-        "readOnly": false,
-        "insertSpaces": true,
-        "tabSize": 4,
-        "wordWrapColumn": 88,
-        "rulers": [],
-        "codeFolding": true,
-        "lineWiseCopyCut": true
-    },
-
-    // Default cell type
-    // The default type (markdown, code, or raw) for new cells
-    "defaultCell": "code",
-
-    // Shut down kernel
-    // Whether to shut down or not the kernel when closing a notebook.
-    "kernelShutdown": false,
-
-    // Markdown Cell Configuration
-    // The configuration for all markdown cells.
-    "markdownCellConfig": {
-        "autoClosingBrackets": false,
-        "fontFamily": null,
-        "fontSize": 14,
-        "lineHeight": null,
-        "lineNumbers": false,
-        "lineWrap": "on",
-        "matchBrackets": false,
         "readOnly": false,
         "insertSpaces": true,
         "tabSize": 4,
         "wordWrapColumn": 80,
         "rulers": [],
-        "codeFolding": false,
-        "lineWiseCopyCut": true
+        "codeFolding": true,
+        "lineWiseCopyCut": true,
+        "showTrailingSpace": false
     },
-
-    // Raw Cell Configuration
-    // The configuration for all raw cells.
+    "defaultCell": "code",
+    "kernelShutdown": false,
+    "markdownCellConfig": {
+        "autoClosingBrackets": true,
+        "cursorBlinkRate": 530,
+        "fontFamily": null,
+        "fontSize": 14,
+        "lineHeight": null,
+        "lineNumbers": false,
+        "lineWrap": "wordWrapColumn",
+        "matchBrackets": true,
+        "readOnly": false,
+        "insertSpaces": true,
+        "tabSize": 4,
+        "wordWrapColumn": 80,
+        "rulers": [],
+        "codeFolding": true,
+        "lineWiseCopyCut": true,
+        "showTrailingSpace": false
+    },
     "rawCellConfig": {
         "autoClosingBrackets": false,
+        "cursorBlinkRate": 530,
         "fontFamily": null,
         "fontSize": null,
         "lineHeight": null,
@@ -66,14 +51,23 @@
         "wordWrapColumn": 80,
         "rulers": [],
         "codeFolding": false,
-        "lineWiseCopyCut": true
+        "lineWiseCopyCut": true,
+        "showTrailingSpace": false
     },
-
-    // Recording timing
-    // Should timing data be recorded in cell metadata
+    "scrollPastEnd": true,
     "recordTiming": false,
-
-    // Scroll past last cell
-    // Whether to be able to scroll so the last cell is at the top of the panel
-    "scrollPastEnd": true
+    "numberCellsToRenderDirectly": 20,
+    "renderCellOnIdle": true,
+    "observedTopMargin": "1000px",
+    "observedBottomMargin": "1000px",
+    "maxNumberOutputs": 50,
+    "showEditorForReadOnlyMarkdown": true,
+    "kernelStatus": {
+        "showOnStatusBar": false,
+        "showProgress": true
+    },
+    "experimentalDisableDocumentWideUndoRedo": false,
+    "renderingLayout": "default",
+    "sideBySideLeftMarginOverride": "10px",
+    "sideBySideRightMarginOverride": "10px"
 }

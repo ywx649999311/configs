@@ -4,6 +4,10 @@ CWD=${PWD}
 GITCONFIG="gitconfig_remote"
 GIT_COMPLETION="git-completion.bash"
 GIT_PROMPT="git-prompt.sh"
+PYCODESTYLE="pycodestyle"
+
+# pycodestyle config
+ln -sf "${CWD}/${PYCODESTYLE}" "${HOME}/.config/pycodestyle"
 
 # git bash configuration
 ln -sf "${CWD}/${GITCONFIG}" "${HOME}/.gitconfig"

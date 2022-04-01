@@ -1,0 +1,10 @@
+{
+    // Top Bar Extension
+    // jupyterlab-topbar-extension:plugin
+    // Top Bar Extension
+    // **********************************
+
+    // Top Bar Visibility
+    // Whether the top bar is visible or not
+    "visible": true
+}

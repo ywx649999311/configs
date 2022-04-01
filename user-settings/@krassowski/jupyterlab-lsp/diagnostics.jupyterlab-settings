@@ -1,0 +1,6 @@
+{
+    "defaultSeverity": "Warning",
+    "ignoreCodes": [],
+    "ignoreMessagesPatterns": [],
+    "disable": false
+}

@@ -1,26 +1,20 @@
 {
-    // Text Editor
-    // @jupyterlab/fileeditor-extension:plugin
-    // Text editor settings.
-    // ***************************************
-
-    // Editor Configuration
-    // The configuration for all text editors.
-    // If `fontFamily`, `fontSize` or `lineHeight` are `null`,
-    // values from current theme are used.
     "editorConfig": {
         "autoClosingBrackets": true,
-        "fontFamily": 'monospace',
+        "codeFolding": true,
+        "cursorBlinkRate": 530,
+        "fontFamily": "monospace",
         "fontSize": 14,
+        "insertSpaces": true,
         "lineHeight": null,
         "lineNumbers": true,
-        "lineWrap": "on",
+        "lineWrap": "wordWrapColumn",
         "matchBrackets": true,
         "readOnly": false,
-        "insertSpaces": true,
-        "tabSize": 4,
-        "wordWrapColumn": 88,
         "rulers": [],
-        "codeFolding": false
-    }
+        "showTrailingSpace": false,
+        "tabSize": 4,
+        "wordWrapColumn": 80
+    },
+    "toolbar": []
 }
