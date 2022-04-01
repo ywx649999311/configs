@@ -1,1 +1,0 @@
-{"name":"ipy_reload","description":"Auto reload modules","language":"Python","code":["%load_ext autoreload","%autoreload 2"],"id":0,"tags":[]}
