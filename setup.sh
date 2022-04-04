@@ -30,8 +30,8 @@ fi
 ln -sf "${CWD}/user-settings/" "${HOME}/.jupyter/lab/" 
 ln -sf "${CWD}/nbdime_config.json" "${HOME}/.jupyter/nbdime_config.json" 
 
-# other linked files
-ln -sf "${CWD}/snippets" "${HOME}/"
+# # other linked files
+# ln -sf "${CWD}/snippets" "${HOME}/"
 
 __prompt='
 
