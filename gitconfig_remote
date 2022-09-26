@@ -59,6 +59,7 @@
     ps = push
     ############
     pl = pull
+    plr = pull --rebase    
     ############
     re = reset
     rh = reset HEAD
