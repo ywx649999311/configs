@@ -4,7 +4,9 @@
             "python": [
                 "black"
             ],
-            "r": "formatR"
+            "R": "formatR",
+            "rust": "rustfmt",
+            "c++11": "astyle"
         }
     },
     "black": {
@@ -31,5 +33,9 @@
         "width_cutoff": 150
     },
     "styler": {},
-    "formatOnSave": true
+    "formatOnSave": true,
+    "astyle": {
+        "args": []
+    },
+    "suppressFormatterErrors": true
 }
