@@ -1,0 +1,3 @@
+- `com.googlecode.iterm2.plist`: iTerm2 preferences
+- `Yu_iTerm_Color.itercolors`: iTerm2 color settings
+- `.zshrc`: Oh my zsh config files
