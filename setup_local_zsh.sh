@@ -20,3 +20,6 @@ fi
 
 mkdir -p "${HOME}/.jupyter/lab/user-settings" 
 cp -rf "${CWD}/user-settings" "${HOME}/.jupyter/lab/"
+
+# copy zshrc
+cp -f "${CWD}/other_config_files/.zshrc" "${HOME}"
