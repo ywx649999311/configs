@@ -1,13 +1,15 @@
 {
-    "blockWhileCommandExecutes": true,
-    "cancelPullMergeConflict": true,
-    "disableBranchWithChanges": false,
-    "displayStatus": false,
-    "doubleClickDiff": true,
+    "commitAndPush": false,
     "historyCount": 25,
+    "openFilesBehindWarning": true,
     "refreshIfHidden": false,
     "refreshInterval": 3000,
     "simpleStaging": false,
-    "commitAndPush": false,
-    "openFilesBehindWarning": true
+    "blockWhileCommandExecutes": true,
+    "cancelPullMergeConflict": false,
+    "disableBranchWithChanges": false,
+    "displayStatus": true,
+    "doubleClickDiff": false,
+    "promptUserIdentity": false,
+    "hideHiddenFileWarning": false
 }

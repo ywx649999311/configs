@@ -1,3 +1,8 @@
 {
-    "saveState": true
+    // Jupyter Widgets
+    // @jupyter-widgets/jupyterlab-manager:plugin
+    // Jupyter widgets settings.
+    // ******************************************
+
+
 }

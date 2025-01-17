@@ -3,18 +3,15 @@
         "autoClosingBrackets": true,
         "codeFolding": true,
         "cursorBlinkRate": 530,
+        "highlightActiveLine": true,
         "fontFamily": "monospace",
         "fontSize": 14,
         "insertSpaces": true,
         "lineHeight": null,
-        "lineNumbers": true,
-        "lineWrap": "wordWrapColumn",
-        "matchBrackets": true,
         "readOnly": false,
-        "rulers": [],
         "showTrailingSpace": false,
-        "tabSize": 4,
         "wordWrapColumn": 88
     },
+    "scrollPastEnd": true,
     "toolbar": []
 }

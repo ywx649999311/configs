@@ -1,0 +1,9 @@
+{
+        "toolbar":[{
+            "name": "uploader",
+            "args": {},
+            "command": "",
+            "disabled": true,
+            "rank": 20
+        },]
+}
