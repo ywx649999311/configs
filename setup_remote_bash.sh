@@ -29,7 +29,7 @@ if [ ! -e "$LabConfig" ]; then
 fi
 ln -sf "${CWD}/user-settings/" "${HOME}/.jupyter/lab/" 
 ln -sf "${CWD}/nbdime_config.json" "${HOME}/.jupyter/nbdime_config.json" 
-ln -sf "${CWD}/jupyter_notebook_config.py_remote" "${HOME}/.jupyter/jupyter_notebook_config.py" 
+ln -sf "${CWD}/jupyter_notebook_config_remote.py" "${HOME}/.jupyter/jupyter_notebook_config.py" 
 
 __prompt='
 
