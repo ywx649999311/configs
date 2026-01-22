@@ -4,10 +4,9 @@
 	required = true
 [user]
 	name = Weixiang Yu
-	email = wy73@drexel.edu
+	email = astro.flyfish@gmail.com
 [credential]
 	helper = store
-	helper = cache --timeout=3600
 [push]
 	default = upstream
 
@@ -66,3 +65,5 @@
     reh = reset --hard
     ############
     s = status
+[credential]
+	helper = store

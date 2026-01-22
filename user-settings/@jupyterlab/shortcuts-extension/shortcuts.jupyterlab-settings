@@ -2,6 +2,12 @@
     "shortcuts": [
         {
             "args": {},
+            "command": "jupyterlab_code_formatter:format",
+              "keys": ["Ctrl Shift F"],
+              "selector": ".jp-Notebook.jp-mod-editMode"
+        },
+        {
+            "args": {},
             "command": "notebook:toggle-all-cell-line-numbers",
             "keys": [
                 "Shift Alt L"
